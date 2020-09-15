@@ -1,21 +1,30 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { Layout, Header, Navigation, Content } from "react-mdl";
+import { Link } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <About />
-      <Resume />
-      <Projects />
-      <Contact />
-      <Footer />
+    <div style={{ height: "300px", position: "relative" }}>
+      <Layout
+        style={{
+          background:
+            "url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover",
+        }}
+      >
+        <Header transparent title="Bryan Bilek" style={{ color: "white" }}>
+          <Navigation>
+            <Link to="/about">About</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
+          </Navigation>
+        </Header>
+        <Content>
+          <Dashboard />
+        </Content>
+      </Layout>
     </div>
   );
 }
