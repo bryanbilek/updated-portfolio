@@ -4,12 +4,12 @@ import styled from "styled-components";
 export default function Footer() {
   return (
     <div>
-      <Footer>Copyright © 2020 bryanbilek.com - All Rights Reserved</Footer>
+      <FooterX>Copyright © 2020 bryanbilek.com - All Rights Reserved</FooterX>
     </div>
   );
 }
 
-const Footer = styled.footer`
+const FooterX = styled.footer`
   background-color: black;
   color: white;
   padding: 2%;
