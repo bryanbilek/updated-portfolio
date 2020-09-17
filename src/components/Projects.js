@@ -3,7 +3,7 @@ import React from "react";
 export default function Projects() {
   return (
     <div>
-      <p>Put Projects here</p>
+      <h1>Projects</h1>
     </div>
   );
 }
